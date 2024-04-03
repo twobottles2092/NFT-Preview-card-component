@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;;
+}
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#container {
+    height: 450px;
+    width: 270px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background-color: var(--Very-dark-blue-card-BG);
+}
+section {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10px;
+    gap: 1rem;
+}
+.title h1 {
+    font-size: 15px;
+    color: white;
+}
+.title h1:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.description p {
+    color: var(--Soft-blue);
+    font-size: 14px;
+    padding-right: 7px
+}
+
+.crypto-price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.crypto-price .etherium-price p{
+    display: inline-block;
+    color: var(--Cyan);
+    font-size: 13px;
+}
+.crypto-price .etherium-price .icon-etherium {
+    height: 12px;
+    width: 7px;
+}
+
+.crypto-price .time p{
+    display: inline-block;
+    font-size: 12px;
+    color: var(--Soft-blue);
+    text-align: center; !important;
+}
+.crypto-price .time .icon-clock {
+    height: 13px;
+    width: 12px;
+}
+header {
+    position: relative;
+    z-index: 1;
+}
+header .image-equilibrium {
+    height:230px;
+    width: 100%;
+    border-radius: 10px;
+   
+}
+
+header .icon-view-container {
+    background-color: aqua;
+    height: 230px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 1;
+    border-radius: 10px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+header .icon-view-container:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+header .icon-view {
+    position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-45%, -50%);
+}
+header .image-equilibrium:hover {
+    cursor: pointer;
+
+}
+footer .image-avatar {
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+footer {
+    display: flex;
+}
+footer p {
+    text-align: center;
+    padding-left: 15px;
+    color: var(--Soft-blue);
+    font-size: 12px;
+    padding-top: 5px;
+    
+}
+footer .name {
+    color: white;
+}
+footer .name:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+hr {
+    background-color: var(--Very-dark-blue-line);
+    opacity: 0.1;
+    
+}
+.attribution { 
+    font-size: 11px; 
+    position: absolute;
+    bottom: 0;
+}
+.attribution p {
+    color: white;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
